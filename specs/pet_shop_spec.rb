@@ -164,7 +164,6 @@ class TestPetShop < Minitest::Test
     assert_equal(1, customer_pet_count(customer))
   end
 
-  # Reached MVP
 
   # # OPTIONAL
 

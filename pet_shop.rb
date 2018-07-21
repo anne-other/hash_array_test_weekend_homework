@@ -61,12 +61,12 @@ def customer_pet_count(customer)
   return customer[:pets].size
 end
 
-def add_pet_to_customer(customer, new_pet)
-  customer[:pets] << new_pet
+def add_pet_to_customer(customer, pet)
+  customer[:pets] << pet
 end
 
-def customer_can_afford_pet(customer, new_pet)
-  return customer_cash(customer) > new_pet[:price]
+def customer_can_afford_pet(customer, pet)
+  return customer_cash(customer) > pet[:price]
 end
 
 def sell_pet_to_customer(pet_shop, pet, customer)

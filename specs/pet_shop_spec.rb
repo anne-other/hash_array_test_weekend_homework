@@ -192,7 +192,6 @@ class TestPetShop < Minitest::Test
     assert_equal(100, customer_cash(customer))
     assert_equal(1900, total_cash(@pet_shop))
   end
-#I notice this test does't include an assertion to see if the pet is removed from the pet shop when sold
 
 
   def test_sell_pet_to_customer__pet_not_found
